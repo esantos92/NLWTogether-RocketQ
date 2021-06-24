@@ -109,6 +109,7 @@
   display: flex;
   align-items: center;
   min-height: 5.5rem;
+  text-align: justify;
 }
 
 .question-wrapper .actions{
