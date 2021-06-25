@@ -18,7 +18,7 @@ deleteButton.forEach(button => {
   button.addEventListener("click", (event) => handleClick(event, false))
 })
 
-function handleClick(event, check = true){
+function handleClick(event, check = true) {
   event.preventDefault()
   const text = check ? "Marcar como lida" : "Excluir"
   const slug = check ? "check" : "delete"
@@ -26,11 +26,11 @@ function handleClick(event, check = true){
   const form = document.querySelector(".modal form")
   const questionId = event.target.dataset.id
 
-  form.setAttribute("action", `/room/${roomId}/${questionId}/${slug}`)
+  form.setAttribute("action", `/question/${roomId}/${questionId}/${slug}`)
 
-  modalTitle.innerHTML= `${text} esta pergunta`
-  modalDescription.innerHTML= `Tem certeza que deseja ${text.toLowerCase()} esta pergunta?`
-  modalButton.innerHTML= `Sim, ${text.toLowerCase()}`
+  modalTitle.innerHTML = `${text} esta pergunta`
+  modalDescription.innerHTML = `Tem certeza que deseja ${text.toLowerCase()} esta pergunta?`
+  modalButton.innerHTML = `Sim, ${text.toLowerCase()}`
 
   check ? modalButton.classList.remove("red") : modalButton.classList.add("red")
 
