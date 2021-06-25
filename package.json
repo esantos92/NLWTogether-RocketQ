@@ -1,0 +1,27 @@
+{
+  "name": "RocketQ",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esantos92/NLWTogether-RocketQ.git"
+  },
+  "keywords": [],
+  "author": "Everton Santos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/esantos92/NLWTogether-RocketQ/issues"
+  },
+  "homepage": "https://github.com/esantos92/NLWTogether-RocketQ#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
